@@ -1,0 +1,100 @@
+#header{
+    color: white;
+    position: relative;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .header h1 {
+    font-size: 4rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  .header h1 span {
+    display: block;
+  }
+  h1 span:nth-child(1) {
+    font-weight: 800;
+  }
+  
+  h1 span:nth-child(2),
+  h1 span:nth-child(3) {
+    font-weight: 100;
+  }
+  .header h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 65%;
+    height: 1px;
+    background: var(--color-white);
+  }
+  .header-left p {
+    margin: 3rem 0;
+    color: var(--color-white);
+    width: 70%;
+  }
+.btn-dark {
+    color: white;
+    padding: 6px 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+.btn-light {
+    padding: 6px 15px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: orangered;
+    border: 2px solid transparent;
+    color: #fff;
+  }    
+  .floating-icon {
+    background-color: var(--light-blue);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  .floating-icon a {
+    border: 1px solid #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mouse {
+    transform: translateY(-25%);
+    animation: bounce 0.8s ease infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(25%);
+    }
+  }  

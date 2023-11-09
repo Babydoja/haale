@@ -1,0 +1,33 @@
+.navbars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links1{
+    display: flex;
+    gap: 15px;
+}
+.nav-links1 a{
+    /* color: white; */
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+.navbars .menu-icons1{
+    display: none;
+}
+@media screen  and (max-width:600px){
+   
+    .nav-links1 {
+        display: none;
+        border: 2px solid #fff;
+        z-index: 111;
+    }
+    
+}
